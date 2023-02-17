@@ -7,7 +7,7 @@ import Weather from "../components/Weather";
 
 export default function Home() {
   const [cityName, setCityName] = useState("");
-  const [weather, setWeather] = useState({});
+  const [weather, setWeather] = useState({ main: "" });
   const [error, setError] = useState("");
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}`;
 
@@ -21,7 +21,7 @@ export default function Home() {
       })
       .catch((error) => {
         setError(`Error: City name ${cityName} is invalid. Please try again.`);
-        setWeather("");
+        setWeather({ main: "" });
       });
     setCityName("");
   };
