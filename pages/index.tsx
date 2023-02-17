@@ -11,7 +11,7 @@ export default function Home() {
   const [error, setError] = useState("");
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}`;
 
-  const fetchWeather = (e) => {
+  const fetchWeather = (e: any) => {
     e.preventDefault();
     axios
       .get(url)

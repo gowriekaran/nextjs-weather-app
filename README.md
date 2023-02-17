@@ -1,3 +1,7 @@
+# NextJSWeatherApp
+
+> Inspired by this [YouTube tutorial](https://www.youtube.com/watch?v=b9fWvR5O0Hc) by [@fireclint](https://github.com/fireclint)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
